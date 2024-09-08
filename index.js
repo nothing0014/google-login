@@ -14,7 +14,7 @@ const port = process.env.PORT || 8080;
 
 //連結mongoDB
 mongoose
-  .connect(process.env.MONGODB_CONNECTION)
+  .connect("mongodb://localhost:27017/GoogleDB")
   .then(() => {
     console.log("connecting to mongodb...");
   })
